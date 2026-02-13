@@ -1,0 +1,673 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Wedding</title>
+<meta name="generator" content="WYSIWYG Web Builder 20 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/wedding.css" rel="stylesheet">
+<link href="css/wb16_wedding.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="wb.parallax.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="wwb20.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#welcome']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#services1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_services1').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top }, 600, 'easeOutCirc');
+   });
+   $('#wb_LayoutGrid1').parallax();
+   $("a[href*='#LayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#LayoutGrid3']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 600, 'easeOutCirc');
+   });
+   $('#wb_LayoutGrid3').parallax();
+   $("a[href*='#LayoutGrid4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#contactTop']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_contactTop').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#portfolioLayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_portfolioLayoutGrid1').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollportfolioLayoutGrid1()
+   {
+      var $obj = $("#wb_portfolioLayoutGrid1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollportfolioLayoutGrid1();
+   $(window).scroll(function(event)
+   {
+      onScrollportfolioLayoutGrid1();
+   });
+   $("a[href*='#portfolioLayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_portfolioLayoutGrid2').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollportfolioLayoutGrid2()
+   {
+      var $obj = $("#wb_portfolioLayoutGrid2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollportfolioLayoutGrid2();
+   $(window).scroll(function(event)
+   {
+      onScrollportfolioLayoutGrid2();
+   });
+   $('#wb_links').parallax();
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+   function aspectRatioportfolioRollOverText1()
+   {
+      var $obj = $("#portfolioRollOverText1");
+      var height = $obj.width() / 1.5;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioportfolioRollOverText1() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioportfolioRollOverText1();
+   });
+   aspectRatioportfolioRollOverText1();
+   function aspectRatioportfolioRollOverText2()
+   {
+      var $obj = $("#portfolioRollOverText2");
+      var height = $obj.width() / 1.5;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioportfolioRollOverText2() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioportfolioRollOverText2();
+   });
+   aspectRatioportfolioRollOverText2();
+   function aspectRatioportfolioRollOverText3()
+   {
+      var $obj = $("#portfolioRollOverText3");
+      var height = $obj.width() / 1.5;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioportfolioRollOverText3() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioportfolioRollOverText3();
+   });
+   aspectRatioportfolioRollOverText3();
+   function aspectRatioportfolioRollOverText4()
+   {
+      var $obj = $("#portfolioRollOverText4");
+      var height = $obj.width() / 1.5;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioportfolioRollOverText4() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioportfolioRollOverText4();
+   });
+   aspectRatioportfolioRollOverText4();
+   function aspectRatioportfolioRollOverText5()
+   {
+      var $obj = $("#portfolioRollOverText5");
+      var height = $obj.width() / 1.5;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioportfolioRollOverText5() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioportfolioRollOverText5();
+   });
+   aspectRatioportfolioRollOverText5();
+   function aspectRatioportfolioRollOverText6()
+   {
+      var $obj = $("#portfolioRollOverText6");
+      var height = $obj.width() / 1.5;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioportfolioRollOverText6() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioportfolioRollOverText6();
+   });
+   aspectRatioportfolioRollOverText6();
+   var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+   if (iOS)
+   {
+      $('#wb_welcome,#wb_LayoutGrid1,#wb_LayoutGrid3,#wb_links').css('background-attachment', 'scroll');
+   }
+});
+</script>
+<script src="js/particles.min.js"></script>
+<script>
+// NOTE: this script adds animated hearts to the background of the welcome page.
+// The script uses one of the built-in shapes. You can change the shape, color etc in object 'heartShape'
+$(document).ready(function()
+{
+   $('#welcome').prepend('<div id="particles1"></div>');
+ 
+particlesJS("particles1", { particles: {
+    number: {
+        value: 15,
+        density: {
+            enable: true,
+            value_area: 1924.0944730386273
+        }
+    },
+    color: {
+        value: "#ffffff"
+    },
+    shape: {
+        type: "image",
+        stroke: {
+            width: 0,
+            color: "#000000"
+        },
+        polygon: {
+            nb_sides: 6
+        },
+        image: {
+            src: "images/heart.png",
+            width: 100,
+            height: 100
+        }
+    },
+    opacity: {
+        value: 0.5,
+        random: false,
+        anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false
+        }
+    },
+    size: {
+        value: 112.2388442605866,
+        random: true,
+        anim: {
+            enable: false,
+            speed: 40,
+            size_min: 0.1,
+            sync: false
+        }
+    },
+    line_linked: {
+        enable: true,
+        distance: 0,
+        color: "#ffffff",
+        opacity: 0,
+        width: 5.932624625202434
+    },
+    move: {
+        enable: true,
+        speed: 8.017060304327615,
+        direction: "top - right",
+        random: false,
+        straight: false,
+        out_mode: "out",
+        bounce: false,
+        attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200
+        }
+    }
+}, interactivity: {
+    detect_on: "canvas",
+    events: {
+        onhover: {
+            enable: true,
+            mode: "repulse"
+        },
+        onclick: {
+            enable: true,
+            mode: "push"
+        },
+        resize: true
+    },
+    modes: {
+        grab: {
+            distance: 400,
+            line_linked: {
+                opacity: 1
+            }
+        },
+        bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3
+        },
+        repulse: {
+            distance: 200,
+            duration: 0.4
+        },
+        push: {
+            particles_nb: 4
+        },
+        remove: {
+            particles_nb: 2
+        }
+    }
+}, retina_detect: true
+});
+});
+</script>
+</head>
+<body>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_headerIcon" style="display:inline-block;width:47px;height:42px;text-align:center;z-index:0;">
+<div id="headerIcon"><i class="fa fa-venus-mars"></i></div>
+</div>
+<div id="wb_headerLogo" style="display:inline-block;width:134px;height:47px;z-index:1;vertical-align:top;">
+<ul id="headerLogo">
+<li><a href="#services1">Wedding</a></li>
+</ul>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_headerMenu" style="display:block;width:100%;z-index:2;">
+<ul id="headerMenu" role="menubar" class="nav">
+<li role="menuitem" class="nav-item firstmain"><a class="nav-link headerMenu-effect" href="#welcome" target="_self">OUR&nbsp;STORY</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="#services1" target="_self">GROOM&nbsp;&amp;&nbsp;BRIDE</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="#features" target="_self">TIME&nbsp;&amp;&nbsp;PLACE</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="#" target="_self">GALLERY</a>
+</li>
+<li role="menuitem" class="nav-item"><a class="nav-link headerMenu-effect" href="#contactTop" target="_self">RSVP</a>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_welcome">
+<div id="welcome">
+<div class="col-1">
+<div id="wb_headerText" class="blurred-backdrop">
+<p style="font-size:15px;line-height:16.5px;"><span style="font-size:37px;line-height:41.5px;font-weight:bold;">Andrew</span><span style="font-size:37px;line-height:41.5px;font-weight:bold;"> &amp; </span><span style="font-size:37px;line-height:41.5px;font-weight:bold;">Lisa</span></p>
+<p style="font-size:16px;line-height:18px;"><span style="font-style:italic;">are getting married</span></p>
+</div>
+<div id="wb_heartShape" style="display:inline-block;width:64px;height:64px;z-index:4;position:relative;">
+<img src="images/img0001.png" id="heartShape" alt="" width="64" height="64" style="width:64px;height:64px;display:none !important">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_services1">
+<div id="services1">
+<div class="row">
+<div class="col-1">
+<div id="wb_servicesCard1" style="display:flex;width:100%;z-index:5;" class="card">
+<div id="servicesCard1-card-body">
+<div id="servicesCard1-card-item0"><a href="http://"><svg class="svg-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M870 18 C870 10, 873 3, 878 -2 C884 -8, 891 -10, 899 -10 L1063 -10 C1076 -10, 1087 -6, 1097 4 C1106 13, 1110 24, 1110 36 L1110 201 C1110 209, 1108 216, 1102 221 C1097 227, 1090 229, 1082 229 L1046 229 C1037 229, 1030 227, 1025 221 C1019 216, 1017 209, 1017 201 L1017 134 L892 271 C920 304, 941 343, 953 390 C965 437, 967 487, 958 540 C946 607, 914 667, 862 718 C810 769, 748 800, 677 810 C589 823, 511 806, 442 759 C400 788, 354 806, 306 811 L306 868 L350 868 C359 868, 365 870, 371 876 C376 881, 379 888, 379 895 L379 932 C379 940, 376 947, 371 953 C365 958, 359 961, 350 961 L306 961 L306 1005 C306 1013, 303 1020, 298 1026 C292 1031, 285 1034, 278 1034 L241 1034 C232 1034, 225 1031, 220 1026 C215 1020, 212 1014, 212 1005 L212 961 L167 961 C159 961, 152 958, 147 953 C142 947, 139 940, 139 932 L139 895 C139 888, 142 881, 147 876 C152 870, 159 868, 167 868 L212 868 L212 811 C157 805, 105 784, 56 748 C8 711, -29 665, -54 608 C-78 551, -86 490, -77 427 C-67 354, -36 290, 17 237 C70 184, 133 152, 206 140 C294 127, 373 144, 442 191 C495 154, 556 136, 625 136 C705 136, 772 160, 829 208 L965 83 L899 83 C891 83, 884 80, 878 75 C873 70, 870 63, 870 54 Z M442 644 C484 598, 505 542, 505 475 C505 409, 484 352, 442 306 C400 352, 379 408, 379 475 C379 542, 400 598, 442 644 Z M85 301 C37 349, 13 407, 13 475 C13 543, 37 601, 85 649 C134 697, 191 721, 259 721 C302 721, 340 713, 373 696 C315 637, 285 563, 285 475 C285 387, 315 314, 373 254 C340 238, 302 229, 259 229 C191 229, 133 253, 85 301 Z M625 721 C692 721, 750 697, 798 649 C846 601, 870 543, 870 475 C870 408, 846 350, 798 301 C750 253, 692 229, 625 229 C582 229, 544 238, 510 254 C569 314, 598 387, 598 475 C598 563, 569 637, 510 696 C544 713, 582 721, 625 721"/>
+</svg>
+</a></div>
+<div id="servicesCard1-card-item1">Our Story</div>
+<div id="servicesCard1-card-item2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1-overlay"></div>
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading1" style="display:block;width:100%;z-index:6;">
+<h1 id="Heading1">Groom & Bride</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_Image1" style="display:inline-block;width:212px;height:212px;z-index:7;" data-bottom-top="transform:translate(-1000px,0px);" data-center-bottom="transform:translate(0px,0px);">
+<img src="images/avatar16.jpg" id="Image1" alt="" width="210" height="210">
+</div>
+<div id="wb_Heading2" style="display:block;width:100%;z-index:8;" data-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+<h2 id="Heading2">The Groom</h2>
+</div>
+<div id="wb_Heading3" style="display:block;width:100%;z-index:9;" data-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+<h1 id="Heading3">Lorem</h1>
+</div>
+<div id="wb_Text1" data-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+<span style="color:#808080;font-family:Arial;font-size:13px;line-height:19px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. </span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Image2" style="display:inline-block;width:212px;height:212px;z-index:11;" data-bottom-top="transform:translate(1000px,0px);" data-center-bottom="transform:translate(0px,0px);">
+<img src="images/avatar25.jpg" id="Image2" alt="" width="210" height="210">
+</div>
+<div id="wb_Heading4" style="display:block;width:100%;z-index:12;" data-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+<h2 id="Heading4">The Bride</h2>
+</div>
+<div id="wb_Heading5" style="display:block;width:100%;z-index:13;" data-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+<h1 id="Heading5">Ipsumnella</h1>
+</div>
+<div id="wb_Text2" data-bottom-top="opacity:0;" data-center-bottom="opacity:1;">
+<span style="color:#808080;font-family:Arial;font-size:13px;line-height:19px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. </span>
+</div>
+</div>
+<div class="col-4">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3-overlay"></div>
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading6" style="display:block;width:100%;z-index:15;" data-bottom-top="opacity:0;" data-200-center-bottom="opacity:1;">
+<h1 id="Heading6">March 28, 2020</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Card3" style="display:flex;width:100%;z-index:16;" class="card" data-bottom-top="transform:translate(-1000px,-51px);" data-center-bottom="transform:translate(0px,-50px);">
+<div id="Card3-card-body">
+<div id="Card3-card-item0"><a href="http://"><svg class="svg-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M313 521 C248 523, 195 548, 156 595 L75 595 C41 595, 13 586, -11 569 C-35 552, -46 527, -46 494 C-46 353, -19 282, 35 282 C39 282, 48 287, 63 295 C78 303, 96 311, 118 319 C140 327, 162 331, 183 331 C208 331, 236 326, 269 317 C268 338, 267 354, 267 365 C267 416, 282 468, 313 521 Z M925 876 C925 924, 910 963, 880 991 C850 1020, 811 1034, 762 1034 L263 1034 C214 1034, 174 1020, 144 991 C115 963, 100 924, 100 876 C100 855, 100 835, 102 816 C103 796, 106 775, 110 753 C114 730, 119 709, 125 689 C132 670, 140 650, 151 631 C162 613, 174 596, 188 583 C202 570, 219 559, 240 551 C261 542, 283 538, 308 538 C314 538, 324 544, 339 555 C354 566, 368 575, 382 583 C395 591, 414 598, 438 606 C463 614, 487 618, 512 618 C537 618, 562 614, 586 606 C611 598, 629 591, 643 583 C656 575, 671 566, 686 555 C701 544, 711 538, 717 538 C741 538, 764 542, 784 551 C805 559, 822 570, 837 583 C851 597, 863 613, 874 631 C884 650, 893 669, 899 689 C905 709, 911 730, 915 753 C919 775, 921 797, 923 817 C924 837, 925 856, 925 876 Z M294 36 C325 66, 340 103, 340 146 C340 189, 325 226, 294 257 C263 287, 226 302, 183 302 C140 302, 103 287, 72 257 C42 226, 27 189, 27 146 C27 103, 42 66, 72 36 C103 5, 140 -10, 183 -10 C226 -10, 263 5, 294 36 Z M675 203 C720 248, 742 302, 742 365 C742 429, 720 483, 675 528 C630 573, 577 595, 512 595 C449 595, 395 573, 350 528 C305 483, 283 429, 283 365 C283 302, 305 248, 350 203 C395 158, 449 136, 512 136 C577 136, 630 158, 675 203 Z M1071 494 C1071 527, 1059 552, 1036 569 C1012 586, 983 595, 950 595 L868 595 C829 548, 777 523, 712 521 C743 468, 758 416, 758 365 C758 355, 757 339, 755 317 C788 326, 817 331, 841 331 C863 331, 884 327, 906 319 C929 311, 947 303, 962 295 C977 286, 986 282, 990 282 C1044 282, 1071 353, 1071 494 Z M952 36 C983 66, 998 103, 998 146 C998 189, 983 226, 952 257 C922 287, 885 302, 841 302 C798 302, 761 287, 731 257 C700 226, 685 189, 685 146 C685 103, 700 66, 731 36 C761 5, 798 -10, 841 -10 C885 -10, 922 5, 952 36"/>
+</svg>
+</a></div>
+<div id="Card3-card-item1">RECEPTION</div>
+<div id="Card3-card-item2">12:00 PM</div>
+<div id="Card3-card-item3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. </div>
+<div id="Card3-card-item4">Learn more ></div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_todoCard2" style="display:flex;width:100%;z-index:17;" class="card" data-bottom-top="transform:translate(0px,-51px);" data-center-bottom="transform:translate(0px,-50px);">
+<div id="todoCard2-card-body">
+<div id="todoCard2-card-item0"><a href="http://"><svg class="svg-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M544 948 C535 956, 525 961, 512 961 C499 961, 488 956, 479 948 L122 603 C119 600, 114 595, 106 589 C100 582, 90 569, 75 550 C60 532, 46 513, 35 493 C23 473, 12 450, 3 422 C-6 394, -10 367, -10 340 C-10 254, 15 186, 65 137 C115 88, 185 63, 273 63 C297 63, 323 67, 348 76 C374 84, 397 96, 419 110 C440 123, 459 137, 475 150 C490 163, 503 175, 512 186 C520 175, 532 163, 549 150 C565 137, 584 124, 605 110 C626 96, 649 84, 675 76 C701 67, 726 63, 751 63 C839 63, 908 88, 958 137 C1009 186, 1034 254, 1034 340 C1034 427, 989 515, 900 605"/>
+</svg>
+</a></div>
+<div id="todoCard2-card-item1">CEREMONY</div>
+<div id="todoCard2-card-item2">3:00 PM</div>
+<div id="todoCard2-card-item3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. </div>
+<div id="todoCard2-card-item4">Learn more ></div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Card2" style="display:flex;width:100%;z-index:18;" class="card" data-bottom-top="transform:translate(1000px,-51px);" data-center-bottom="transform:translate(0px,-50px);">
+<div id="Card2-card-body">
+<div id="Card2-card-item0"><a href="http://"><svg class="svg-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M981 70 C981 86, 972 103, 953 122 L595 480 L595 905 L768 905 C781 905, 792 909, 801 918 C810 928, 815 939, 815 951 C815 964, 810 975, 801 984 C792 993, 781 998, 768 998 L256 998 C243 998, 232 993, 223 984 C214 975, 209 964, 209 951 C209 938, 214 928, 223 918 C232 909, 243 905, 256 905 L428 905 L428 480 L70 122 C52 103, 43 86, 43 70 C43 58, 47 49, 56 42 C65 36, 73 31, 82 30 C91 28, 100 27, 109 27 L914 27 C923 27, 932 28, 941 30 C950 31, 959 36, 968 42 C977 49, 981 58, 981 70"/>
+</svg>
+</a></div>
+<div id="Card2-card-item1">PARTY</div>
+<div id="Card2-card-item2">5:00 PM</div>
+<div id="Card2-card-item3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. </div>
+<div id="Card2-card-item4">Learn more ></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contactTop">
+<div id="contactTop">
+<div class="row">
+<div class="col-1">
+<div id="wb_Card1" style="display:flex;width:100%;z-index:19;" class="card">
+<div id="Card1-card-body">
+<div id="Card1-card-item0">Gallery</div>
+<div id="Card1-card-item1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_portfolioLayoutGrid1">
+<div id="portfolioLayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="portfolioRollOverText1" style="overflow:hidden;display:block;position: relative;">
+   <img alt="ABOUT" class="image" src="images/wedding01.jpg" width="293" height="195">
+   <div class="caption">
+      <div class="title">ABOUT</div>
+      <p class="description">Read more about our company</p>
+      <a class="link" href="#">More information</a>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="portfolioRollOverText2" style="overflow:hidden;display:block;position: relative;">
+   <img alt="ABOUT" class="image" src="images/wedding02.jpg" width="293" height="195">
+   <div class="caption">
+      <div class="title">ABOUT</div>
+      <p class="description">Read more about our company</p>
+      <a class="link" href="#">More information</a>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="portfolioRollOverText3" style="overflow:hidden;display:block;position: relative;">
+   <img alt="ABOUT" class="image" src="images/wedding03.jpg" width="293" height="195">
+   <div class="caption">
+      <div class="title">ABOUT</div>
+      <p class="description">Read more about our company</p>
+      <a class="link" href="#">More information</a>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_portfolioLayoutGrid2">
+<div id="portfolioLayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="portfolioRollOverText6" style="overflow:hidden;display:block;position: relative;">
+   <img alt="ABOUT" class="image" src="images/wedding05.jpg" width="293" height="195">
+   <div class="caption">
+      <div class="title">ABOUT</div>
+      <p class="description">Read more about our company</p>
+      <a class="link" href="#">More information</a>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="portfolioRollOverText4" style="overflow:hidden;display:block;position: relative;">
+   <img alt="ABOUT" class="image" src="images/wedding04.jpg" width="293" height="195">
+   <div class="caption">
+      <div class="title">ABOUT</div>
+      <p class="description">Read more about our company</p>
+      <a class="link" href="#">More information</a>
+   </div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="portfolioRollOverText5" style="overflow:hidden;display:block;position: relative;">
+   <img alt="ABOUT" class="image" src="images/wedding06.jpg" width="293" height="195">
+   <div class="caption">
+      <div class="title">ABOUT</div>
+      <p class="description">Read more about our company</p>
+      <a class="link" href="#">More information</a>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_contactBottom">
+<div id="contactBottom">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_contactHeading" style="display:block;width:100%;z-index:26;">
+<h1 id="contactHeading">Will You Join Us?</h1>
+</div>
+<input type="text" id="contactName" style="display:block;width: 100%;height:41px;z-index:27;" name="name" value="" spellcheck="false" placeholder="Name">
+<input type="text" id="contactEmail" style="display:block;width: 100%;height:42px;z-index:28;" name="email" value="" spellcheck="false" placeholder="E-mail">
+<select name="guests" size="1" id="Combobox1" style="display:block;width: 100%;height:42px;z-index:29;">
+<option selected value="0">Number of Guests</option>
+<option value="1">One</option>
+<option value="2">Two</option>
+<option value="3">Three</option>
+<option value="4">Four</option>
+</select>
+<textarea name="message" id="contactMessage" style="display:block;width: 100%;;height:80px;z-index:30;" rows="2" cols="53" autocomplete="off" spellcheck="false" placeholder="Message"></textarea>
+<input type="submit" id="contactButton" name="" value="Submit" style="display:block;width: 100%;;height:42px;z-index:31;">
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+<div id="wb_links">
+<div id="links-overlay"></div>
+<div id="links">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading7" style="display:block;width:100%;z-index:32;">
+<h1 id="Heading7">See you at the wedding!</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_footerText">
+<p>Copyright © 2020 WYSIWYG Web Builder.&nbsp; All Rights Reserved</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:48;">
+<div id="wb_upIcon" style="position:absolute;left:9px;top:7px;width:24px;height:24px;text-align:center;z-index:34;">
+<a href="#welcome"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+
+
+<a href="https://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb20.png" alt="WYSIWYG Web Builder" style="position:absolute;left:441px;top:4056px;margin: 0;border-width:0;z-index:250" width="88" height="31"></a>
+</body>
+</html>
