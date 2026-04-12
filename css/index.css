@@ -3254,13 +3254,6 @@ body
    box-sizing: border-box;
    width: 100%;
 }
-#wb_Form1
-{
-   background-color: #FFFFFF;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-}
 #Select1
 {
    border: 1px solid #C1A38C;
@@ -3409,7 +3402,8 @@ body
 }
 #Input1
 {
-   line-height: 30px;
+   box-sizing: border-box;
+   line-height: 18px;
    margin: 0;
    border: 1px solid #C1A38C;
    border-radius: 0px;
@@ -3421,12 +3415,10 @@ body
    font-style: normal;
    font-size: 13px;
    text-align: left;
-   padding: 6px 12px 6px 12px;
+   padding: 12px 16px 12px 16px;
 }
 #Input1:focus
 {
-   border-color: #66AFE9;
-   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
    outline: 0;
 }
 #particles1
