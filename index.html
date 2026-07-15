@@ -6,7 +6,7 @@
 <meta name="generator" content="WYSIWYG Web Builder 21 - http://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/font-awesome.min.css" rel="stylesheet">
-<link href="css/wedding_form_menu_googlesheet_email.css" rel="stylesheet">
+<link href="css/wedding_form_menu_googlesheet_email_2.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
 <script src="jquery.ui.effect.min.js"></script>
@@ -216,6 +216,60 @@ $(document).ready(function()
       aspectRatioportfolioRollOverText6();
    });
    aspectRatioportfolioRollOverText6();
+   function aspectRatioRollOverText1()
+   {
+      var $obj = $("#RollOverText1");
+      var height = $obj.width() / 1.33;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioRollOverText1() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioRollOverText1();
+   });
+   aspectRatioRollOverText1();
+   function aspectRatioRollOverText2()
+   {
+      var $obj = $("#RollOverText2");
+      var height = $obj.width() / 1.33;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioRollOverText2() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioRollOverText2();
+   });
+   aspectRatioRollOverText2();
+   function aspectRatioRollOverText3()
+   {
+      var $obj = $("#RollOverText3");
+      var height = $obj.width() / 1.33;
+      if (height == 0)
+      {
+         setTimeout(function(){ aspectRatioRollOverText3() }, 250);
+      }
+      else
+      {
+         $obj.css('height', height + 'px');
+      }
+   }
+   $(window).resize(function()
+   {
+      aspectRatioRollOverText3();
+   });
+   aspectRatioRollOverText3();
    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
    if (iOS)
    {
@@ -479,9 +533,10 @@ particlesJS("particles1", { particles: {
    <path d="M313 521 C248 523, 195 548, 156 595 L75 595 C41 595, 13 586, -11 569 C-35 552, -46 527, -46 494 C-46 353, -19 282, 35 282 C39 282, 48 287, 63 295 C78 303, 96 311, 118 319 C140 327, 162 331, 183 331 C208 331, 236 326, 269 317 C268 338, 267 354, 267 365 C267 416, 282 468, 313 521 Z M925 876 C925 924, 910 963, 880 991 C850 1020, 811 1034, 762 1034 L263 1034 C214 1034, 174 1020, 144 991 C115 963, 100 924, 100 876 C100 855, 100 835, 102 816 C103 796, 106 775, 110 753 C114 730, 119 709, 125 689 C132 670, 140 650, 151 631 C162 613, 174 596, 188 583 C202 570, 219 559, 240 551 C261 542, 283 538, 308 538 C314 538, 324 544, 339 555 C354 566, 368 575, 382 583 C395 591, 414 598, 438 606 C463 614, 487 618, 512 618 C537 618, 562 614, 586 606 C611 598, 629 591, 643 583 C656 575, 671 566, 686 555 C701 544, 711 538, 717 538 C741 538, 764 542, 784 551 C805 559, 822 570, 837 583 C851 597, 863 613, 874 631 C884 650, 893 669, 899 689 C905 709, 911 730, 915 753 C919 775, 921 797, 923 817 C924 837, 925 856, 925 876 Z M294 36 C325 66, 340 103, 340 146 C340 189, 325 226, 294 257 C263 287, 226 302, 183 302 C140 302, 103 287, 72 257 C42 226, 27 189, 27 146 C27 103, 42 66, 72 36 C103 5, 140 -10, 183 -10 C226 -10, 263 5, 294 36 Z M675 203 C720 248, 742 302, 742 365 C742 429, 720 483, 675 528 C630 573, 577 595, 512 595 C449 595, 395 573, 350 528 C305 483, 283 429, 283 365 C283 302, 305 248, 350 203 C395 158, 449 136, 512 136 C577 136, 630 158, 675 203 Z M1071 494 C1071 527, 1059 552, 1036 569 C1012 586, 983 595, 950 595 L868 595 C829 548, 777 523, 712 521 C743 468, 758 416, 758 365 C758 355, 757 339, 755 317 C788 326, 817 331, 841 331 C863 331, 884 327, 906 319 C929 311, 947 303, 962 295 C977 286, 986 282, 990 282 C1044 282, 1071 353, 1071 494 Z M952 36 C983 66, 998 103, 998 146 C998 189, 983 226, 952 257 C922 287, 885 302, 841 302 C798 302, 761 287, 731 257 C700 226, 685 189, 685 146 C685 103, 700 66, 731 36 C761 5, 798 -10, 841 -10 C885 -10, 922 5, 952 36"/>
 </svg>
 </a></div>
-<div id="Card3-card-item1">RECEPTION</div>
+<div id="Card3-card-item1">Arrival</div>
 <div id="Card3-card-item2">1:00 PM</div>
-<div id="Card3-card-item3">Join us for Arrival Drink, (Choice of Procecco, Pimms cocktail or bottled beer) and a couple of Canapes.</div>
+<div id="Card3-card-item3">Weston Manor Hotel, Northampton Rd, Weston-on-the-Green, Bicester OX25 3QL</div>
+<div id="Card3-card-item4">Phone 01869 350621</div>
 </div>
 </div>
 </div>
@@ -494,8 +549,8 @@ particlesJS("particles1", { particles: {
 </a></div>
 <div id="todoCard2-card-item1">CEREMONY</div>
 <div id="todoCard2-card-item2">2:00 PM</div>
-<div id="todoCard2-card-item3">Weston Manor Hotel, Northampton Rd, Weston-on-the-Green, Bicester OX25 3QL</div>
-<div id="todoCard2-card-item4">Phone 01869 350621</div>
+<div id="todoCard2-card-item3">Reception</div>
+<div id="todoCard2-card-item4">Join us for a Drink, (Choice of Procecco, Pimms cocktail or bottled beer) and a couple of Canapes.</div>
 </div>
 </div>
 </div>
@@ -613,17 +668,53 @@ particlesJS("particles1", { particles: {
 </div>
 </div>
 </div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="RollOverText1" style="overflow:hidden;display:block;position: relative;">
+   <img alt="About" class="image" src="images/20260715_131542.jpg" width="293" height="219">
+   <div class="caption">
+      <div class="title">About</div>
+      <p class="description">Image description goes here</p>
+      <a class="link" href="">More information</a>
+   </div>
+</div>
+</div>
+<div class="col-2">
+<div id="RollOverText2" style="overflow:hidden;display:block;position: relative;">
+   <img alt="About" class="image" src="images/20260715_131420.jpg" width="293" height="219">
+   <div class="caption">
+      <div class="title">About</div>
+      <p class="description">Image description goes here</p>
+      <a class="link" href="">More information</a>
+   </div>
+</div>
+</div>
+<div class="col-3">
+<div id="RollOverText3" style="overflow:hidden;display:block;position: relative;">
+   <img alt="" class="image" src="images/20260715_132123.jpg" width="293" height="219">
+   <div class="caption">
+      <div class="title"></div>
+      <p class="description">Image description goes here</p>
+      <a class="link" href="">More information</a>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div id="wb_contactBottom">
 <form name="contactBottom" method="get" action="https://script.google.com/macros/s/AKfycbxhYqFC-XDuD6R-r0rjgZyAt3CIGzDWpdghW6TDWuXF-TtA_F1LpLGZ6jZZ6jG3uVov/exec" enctype="multipart/form-data" id="contactBottom">
 <div class="col-1">
 </div>
 <div class="col-2">
-<div id="wb_contactHeading" style="display:block;width:100%;z-index:26;">
+<div id="wb_contactHeading" style="display:block;width:100%;z-index:29;">
 <h1 id="contactHeading">Will You Join Us?</h1>
 </div>
-<input type="text" id="contactName" style="display:block;width: 100%;height:41px;z-index:27;" name="name" value="" spellcheck="false" placeholder="Name">
-<input type="text" id="contactEmail" style="display:block;width: 100%;height:42px;z-index:28;" name="email" value="" spellcheck="false" placeholder="E-mail">
-<select name="guests" size="1" id="Combobox1" style="display:block;width: 100%;height:42px;z-index:29;">
+<input type="text" id="contactName" style="display:block;width: 100%;height:41px;z-index:30;" name="name" value="" spellcheck="false" placeholder="Name">
+<input type="text" id="contactEmail" style="display:block;width: 100%;height:42px;z-index:31;" name="email" value="" spellcheck="false" placeholder="E-mail">
+<select name="guests" size="1" id="Combobox1" style="display:block;width: 100%;height:42px;z-index:32;">
 <option selected value="0">Number of Guests</option>
 <option value="1">One</option>
 <option value="2">Two</option>
@@ -634,8 +725,8 @@ particlesJS("particles1", { particles: {
 <option value="7">Seven</option>
 <option value="8">Eight</option>
 </select>
-<textarea name="message" id="contactMessage" style="display:block;width: 100%;;height:80px;z-index:30;" rows="2" cols="53" autocomplete="off" spellcheck="false" placeholder="Message"></textarea>
-<button type="submit" id="ThemeableButton1" name="" value="Submit" class="ui-button ui-corner-all" style="display:inline-block;width:474px;height:100px;line-height:1.0;z-index:31;">Submit</button>
+<textarea name="message" id="contactMessage" style="display:block;width: 100%;;height:80px;z-index:33;" rows="2" cols="53" autocomplete="off" spellcheck="false" placeholder="Message"></textarea>
+<button type="submit" id="ThemeableButton1" name="" value="Submit" class="ui-button ui-corner-all" style="display:inline-block;width:474px;height:100px;line-height:1.0;z-index:34;">Submit</button>
 </div>
 <div class="col-3">
 </div>
@@ -645,7 +736,7 @@ particlesJS("particles1", { particles: {
 <div id="links">
 <div class="row">
 <div class="col-1">
-<div id="wb_Heading7" style="display:block;width:100%;z-index:32;">
+<div id="wb_Heading7" style="display:block;width:100%;z-index:35;">
 <h1 id="Heading7">See you at the wedding!</h1>
 </div>
 </div>
@@ -663,8 +754,8 @@ particlesJS("particles1", { particles: {
 </div>
 </div>
 </div>
-<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:55;">
-<div id="wb_upIcon" style="position:absolute;left:9px;top:7px;width:24px;height:24px;text-align:center;z-index:34;">
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:60;">
+<div id="wb_upIcon" style="position:absolute;left:9px;top:7px;width:24px;height:24px;text-align:center;z-index:37;">
 <a href="#welcome"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
 </div>
 
@@ -679,27 +770,28 @@ particlesJS("particles1", { particles: {
 </div>
 </div>
 <div class="col-2">
-<input type="text" id="Input1" style="display:inline-block;width:339px;height:44px;z-index:36;" name="name" value="" spellcheck="false" placeholder="Name">
-<input type="text" id="Input2" style="display:inline-block;width:339px;height:44px;z-index:37;" name="email" value="" spellcheck="false" placeholder="E-mail">
-<select name="starter" size="1" id="Select1" style="display:inline-block;width:339px;height:44px;z-index:38;">
+<input type="text" id="Input1" style="display:inline-block;width:339px;height:44px;z-index:39;" name="name" value="" spellcheck="false" placeholder="Name">
+<input type="text" id="Input2" style="display:inline-block;width:339px;height:44px;z-index:40;" name="email" value="" spellcheck="false" placeholder="E-mail">
+<select name="starter" size="1" id="Select1" style="display:inline-block;width:339px;height:44px;z-index:41;">
 <option selected value="0">Starter</option>
 <option value="Chicken Liver Parfait">Chicken Liver Parfait</option>
 <option value="Cauliflower Veloute">Cauliflower Veloute</option>
 <option value="Beetroot Cured Scottish Salmon">Beetroot Cured Scottish Salmon</option>
 </select>
-<select name="main" size="1" id="Select2" style="display:inline-block;width:339px;height:49px;z-index:39;">
+<select name="main" size="1" id="Select2" style="display:inline-block;width:339px;height:49px;z-index:42;">
 <option selected value="Main">Main</option>
 <option value="Cotswold Roast Chicken Supreme">Cotswold Roast Chicken Supreme</option>
 <option value="Roast Sirloin of Beef">Roast Sirloin of Beef</option>
 <option value="Spiced Butternut Squash, Spinach & Mushroom Pithivier">Spiced Butternut Squash, Spinach & Mushroom Pithivier</option>
 </select>
-<select name="dessert" size="1" id="Select3" style="display:inline-block;width:339px;height:51px;z-index:40;">
+<select name="dessert" size="1" id="Select3" style="display:inline-block;width:339px;height:51px;z-index:43;">
 <option selected value="None">Dessert</option>
 <option value="Sticky Toffee Pudding">Sticky Toffee Pudding</option>
 <option value="Silician Lemon Cheesecake">Silician Lemon Cheesecake</option>
 <option value="54% Belguim Chocolate Mousse">54% Belguim Chocolate Mousse</option>
 </select>
-<button type="submit" id="IconButton1" name="" value="Submit" class="ui-button ui-corner-all" style="display:inline-block;width:339px;height:68px;line-height:1.0;z-index:41;">Submit</button>
+<input type="text" id="Input3" style="display:inline-block;width:339px;height:44px;z-index:44;" name="diet" value="" spellcheck="false" placeholder="Dietary Requirement">
+<button type="submit" id="IconButton1" name="" value="Submit" class="ui-button ui-corner-all" style="display:inline-block;width:339px;height:68px;line-height:1.0;z-index:45;">Submit</button>
 </div>
 </div>
 </form>
