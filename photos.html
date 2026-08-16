@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/wedding_form_menu_googlesheet_email_3.css" rel="stylesheet">
-<link href="css/Thanks.css" rel="stylesheet">
+<link href="css/photos.css" rel="stylesheet">
 <script src="jquery-3.7.1.min.js"></script>
 <script src="jquery.ui.effect.min.js"></script>
 <script>
@@ -17,11 +17,6 @@ $(document).ready(function()
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
-   });
-   $("a[href*='#welcome']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_welcome').offset().top }, 600, 'easeOutCirc');
    });
 });
 </script>
@@ -63,15 +58,23 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_welcome">
-<div id="welcome">
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
 <div class="col-1">
-<div id="wb_headerText" class="blurred-backdrop">
-<p style="font-size:15px;line-height:16.5px;"><span style="font-size:37px;line-height:41.5px;font-weight:bold;">Thank You</span></p>
-<p style="font-size:16px;line-height:18px;"><span style="font-style:italic;">See you at the wedding</span></p>
+<picture id="wb_Picture1" style="display:block;width: 100%;height:auto;z-index:3">
+<img src="lisa_manor1.jpeg" id="Picture1" alt="" width="293" height="391">
+</picture>
 </div>
-<div id="wb_heartShape" style="display:inline-block;width:64px;height:64px;z-index:4;position:relative;">
-<img src="images/img0002.png" id="heartShape" alt="" width="64" height="64" style="width:64px;height:64px;display:none !important">
+<div class="col-2">
+<picture id="wb_Picture2" style="display:block;width: 100%;height:auto;z-index:4">
+<img src="lisa_manor2.jpeg" id="Picture2" alt="" width="293" height="391">
+</picture>
+</div>
+<div class="col-3">
+<picture id="wb_Picture3" style="display:block;width: 100%;height:auto;z-index:5">
+<img src="lisa_manor3.jpeg" id="Picture3" alt="" width="293" height="391">
+</picture>
 </div>
 </div>
 </div>
